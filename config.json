@@ -1,0 +1,35 @@
+{
+  "botName": "Sachi AntiCrasher",
+  "prefix": ".",
+  "ownerNumbers": [],
+  "pairingNumber": "",
+  "dryRun": false,
+  "authDir": "auth",
+  "logLevel": "info",
+  "stateFile": "data/state.json",
+  "actions": {
+    "deleteForMe": true,
+    "revokeIfAdmin": true,
+    "blockOnHigh": true,
+    "kickOnCritical": false,
+    "autoKickWatchlisted": false,
+    "notifyOwner": true,
+    "guardOutgoing": true,
+    "reportToWhatsApp": true
+  },
+  "report": {
+    "enabled": true,
+    "attempts": 3,
+    "mode": "untilAccepted",
+    "delaysMs": [
+      15000,
+      45000,
+      120000
+    ],
+    "minSeverity": "high",
+    "perSenderDailyCap": 3,
+    "globalHourlyCap": 20
+  },
+  "addWatchlist": [],
+  "thresholds": {}
+}

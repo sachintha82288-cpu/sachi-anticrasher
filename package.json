@@ -1,0 +1,33 @@
+{
+  "name": "sachi-anticrasher",
+  "version": "1.1.0",
+  "description": "Sachi AntiCrasher - WhatsApp crash/bug message guard built on Baileys. Detects poison payloads, deletes them for you, blocks the sender and reports them to WhatsApp.",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "start:dry": "node index.js --dry-run",
+    "test": "node test/detector.test.js && node test/report.test.js && node test/guard.smoke.js",
+    "test:detector": "node test/detector.test.js",
+    "test:report": "node test/report.test.js",
+    "test:guard": "node test/guard.smoke.js",
+    "scan": "node scripts/scan-json.js"
+  },
+  "keywords": [
+    "whatsapp",
+    "baileys",
+    "anticrash",
+    "antibug",
+    "security",
+    "moderation"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.18",
+    "pino": "^9.5.0",
+    "qrcode-terminal": "^0.12.0"
+  }
+}
